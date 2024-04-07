@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOODIE | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h2>FOODIE</h2>
+      <h4>MENU</h4>
+    </div>
+    <nav>
+      <a href="#" class="active_tab">home</a>
+      <a href="#">Help</a>
+      <a href="#">About</a>
+      <a href="#">FAQs</a>
+    </nav>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    let items = document.getElementsByClassName("ani")[0];
+    console.log("hello");
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let viewport = document.querySelector(".viewport"),
+      box = document.querySelector(".ani");
+
+    ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: updateValues,
+    });
+
+    function updateValues() {
+      if (ScrollTrigger.isInViewport(box)) {
+        setTimeout(() => {
+          ScrollTrigger.isInViewport(box)
+            ? (items.style.scale = "1")
+            : (items.style.scale = ".5");
+        }, 500);
+      } else {
+        ScrollTrigger.isInViewport(box)
+          ? (items.style.scale = "1")
+          : (items.style.scale = ".5");
+      }
+    }
+    updateValues();
+  </script>
+</body>
+
+</html>
