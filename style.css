@@ -20,8 +20,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   color: var(--numb-white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
 }
 header {
   display: flex;
@@ -58,7 +59,6 @@ header nav a {
     padding-right: 0;
   }
 }
-
 .logo h2 {
   color: var(--numb-white);
   font-size: 4.5rem;
