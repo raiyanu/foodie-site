@@ -5,11 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FOODIE | Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="stylesheet" href="./styles/bottom.css">
 </head>
 
 <body>
+  <!-- menu and header -->
   <header>
     <div class="logo">
       <h2>FOODIE</h2>
@@ -22,6 +24,9 @@
       <a href="#">FAQs</a>
     </nav>
   </header>
+
+
+  <!-- navigation -->
   <nav class="section-nav" id="section_nav">
     <a href="#SHAKES" onclick="highlight('SHAKES')">SHAKES</a>
     <a href="#ICE" onclick="highlight('ICE')">ICE CREAM</a>
@@ -29,7 +34,18 @@
     <a href="#SNACK" onclick="highlight('SNACK')">SNACK</a>
     <a href="#SAVORY" onclick="highlight('SAVORY')">SAVORY</a>
   </nav>
+
+
+  <!-- menu -->
   <main>
+    <article class="list">
+      <h2 style="text-align:center; width: 100%;">Scan to share Menu</h2>
+
+      <div id="qrcode"
+        style="display: flex; align-items: center;justify-content: center;padding: 10px;border: 1px solid white; width: fit-content; margin: auto; flex-direction: column;margin-top: .7rem;">
+
+      </div>
+    </article>
     <article class="list">
       <h2 id="SHAKES">SHAKES & SMOOTHIES</h2>
       <ul>
@@ -369,12 +385,53 @@
         </li>
       </ul>
     </article>
-
   </main>
 
-  <footer></footer>
 
-  <script src="./masonry.js"></script>
+  <!-- footer -->
+  <footer>
+    <div class="logo">
+      <h2>FOODIE</h2>
+      <h4>MENU</h4>
+      <p style="font-size: small;">Where people connect ❤️ with meals</p>
+    </div>
+    <hr style="width: 205px;margin-block: .5rem 1.5rem;">
+    <span style="z-index:99;">
+      <a href="#"><span style="color: red; font-weight: bolder;">Tel:</span>+91 7339677034</a>
+      <a href="#"><span style="color: red; font-weight: bolder;">Mob:</span>+91 733-967-7034</a>
+      <a href="#"><span style="color: red; font-weight: bolder;">E-Mail:</span>ray38250968@gmail.com</a>
+    </span>
+    <address>11/12,RZZ Road, ambur - 635810, Vellore District, TamilNadu, India.</address>
+  </footer>
+
+
+  <!-- credit -->
+  <section class="dev">
+    <span>Developed</span> &nbsp; By&nbsp;
+    <h2><a href="mailto:raiyan.c.me@gmail.com">Raiyan Ahmed&nbsp;&nbsp;</a></h2>
+    <a href="tel:+91 7339677034"><span style="color: darkgreen; font-weight: bolder;">Tel:</span> &nbsp;+91
+      7339677034&nbsp;</a>
+    <a href="#"><span style="color: darkgreen; font-weight: bolder;">E-Mail:</span>
+      &nbsp;raiyan.c.me@gmail.com&nbsp;</a>
+  </section>
+
+
+  <!-- for qr code -->
+  <script src="./js/qrcode.min.js"></script>
+  <script type="text/javascript">
+    let qrcode = new QRCode("qrcode", {
+      text: window.location.href,
+      width: 160,
+      height: 160,
+      colorDark: "#ffffff",
+      colorLight: "#000000",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+
+
+  <!-- for grid -->
+  <script src="./js/masonry.js"></script>
   <script>
     var grid = document.querySelector('main');
     var masonry = new Masonry(grid, {
@@ -382,7 +439,9 @@
       columnWidth: 10, gutter: 10, fitWidth: true
     });
   </script>
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

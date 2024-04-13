@@ -1,0 +1,38 @@
+footer {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-accent);
+  flex-direction: column;
+  height: fit-content;
+  border-radius: 1rem;
+  margin-inline: 1rem;
+}
+footer span a {
+  color: wheat;
+  display: flex;
+}
+footer > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.dev h2 a {
+  color: var(--numb-white);
+}
+.dev > a {
+  color: #fff;
+}
