@@ -1,6 +1,6 @@
-async function fetchContentData() {
+async function fetchContentData(dataPath) {
   try {
-    const response = await fetch("../data.json");
+    const response = await fetch(dataPath);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -9,9 +9,13 @@ async function fetchContentData() {
     appendMenuData(menuData);
   } catch (error) {
     console.error("Fetch error:", error);
+    if (errCount == 0) {
+      fetchContentData("/foodie-site/data.json");
+      errCount++;
+    }
   }
 }
-
+let errCount = 0;
 function appendMenuData(data) {
   const main = document.querySelector("main");
 
@@ -68,6 +72,6 @@ function appendMenuData(data) {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-  await fetchContentData();
+  await fetchContentData("../data.json");
   await masonry_init();
 });
