@@ -36,6 +36,10 @@ header {
   font-size: 3rem;
   font-family: "Courier New", Courier, monospace;
 }
+.logo.footer > h4 {
+  margin-bottom: 5px;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -48,6 +52,13 @@ header nav {
   width: clamp(100px, 400px, 100%);
 }
 header nav a {
+  color: var(--numb-white);
+  padding: 5px 10px;
+  transition: 250ms all;
+}
+header nav a:hover {
+  background-color: var(--seconday-clr);
+  border-radius: 5px;
   color: var(--numb-white);
 }
 

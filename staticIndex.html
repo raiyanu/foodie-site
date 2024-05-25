@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODIE | Home</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/bottom.css">
+</head>
+
+<body>
+    <!-- menu and header -->
+    <header>
+        <div class="logo">
+            <h2>FOODIE</h2>
+            <h4>MENU</h4>
+        </div>
+        <nav>
+            <a href="#" class="active_tab">home</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+            <a href="#">FAQs</a>
+        </nav>
+    </header>
+
+
+    <!-- navigation -->
+    <nav class="section-nav" id="section_nav">
+        <a href="#SHAKES" onclick="highlight('SHAKES')">SHAKES</a>
+        <a href="#ICE" onclick="highlight('ICE')">ICE CREAM</a>
+        <a href="#DESSERT" onclick="highlight('DESSERT')">DESSERT DELIGHTS</a>
+        <a href="#SNACK" onclick="highlight('SNACK')">SNACK</a>
+        <a href="#SAVORY" onclick="highlight('SAVORY')">SAVORY</a>
+    </nav>
+
+
+    <!-- menu -->
+    <main>
+        <article class="list">
+            <h2 style="text-align:center; width: 100%;">Scan to share Menu</h2>
+
+            <div id="qrcode"
+                style="display: flex; align-items: center;justify-content: center;padding: 10px;border: 1px solid white; width: fit-content; margin: auto; flex-direction: column;margin-top: .7rem;">
+
+            </div>
+        </article>
+        <article class="list">
+            <h2 id="SHAKES">SHAKES & SMOOTHIES</h2>
+            <ul>
+                <li>
+                    <span>
+                        <h3>BERRY BLISS</h3>
+                        <p>A refreshing blend of mixed berries, almond milk, and banana.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>TROPICAL DELIGHT</h3>
+                        <p>A tropical concoction featuring pineapple, mango, coconut milk, and spinach.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>GREEN MACHINE</h3>
+                        <p>A nutrient-packed blend of kale, spinach, banana, apple, and almond milk.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>9.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CHOCOLATE CHIA</h3>
+                        <p>Indulge in this rich chocolatey shake with chia seeds and almond butter.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>SPINACH SUPREME</h3>
+                        <p>A vibrant green smoothie packed with spinach, banana, mango, and coconut water.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+            </ul>
+        </article>
+        <article class="list">
+            <h2 id="ICE"> ICE CREAM DELIGHTS</h2>
+            <ul>
+                <li>
+                    <span>
+                        <h3>COOKIE DOUGH BLISS</h3>
+                        <p>A classic favorite featuring chunks of cookie dough mixed into creamy vanilla ice cream.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CHOCOLATE FUDGE INDULGENCE</h3>
+                        <p>Rich chocolate ice cream swirled with gooey fudge sauce, made entirely from plant-based
+                            ingredients.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>STRAWBERRY SUNDAE SURPRISE</h3>
+                        <p>Fresh strawberry ice cream topped with a decadent berry compote and whipped cream.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+            </ul>
+        </article>
+        <article class="list">
+            <h2 id="DESSERT">DESSERT DELIGHTS</h2>
+            <ul>
+                <li>
+                    <span>
+                        <h3>LEMON BLUEBERRY CHEESECAKE</h3>
+                        <p>Tangy lemon-infused cheesecake topped with fresh blueberries, all on a crunchy almond crust.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CHOCOLATE AVOCADO MOUSSE</h3>
+                        <p>Decadent chocolate mousse made with creamy avocado, sweetened with maple syrup, and topped
+                            with cocoa
+                            nibs.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>RASPBERRY ALMOND TART</h3>
+                        <p>Delicate almond pastry filled with raspberry compote and topped with toasted almond slices.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CARAMEL PECAN BROWNIES</h3>
+                        <p>Gooey caramel brownies studded with crunchy pecans, made with rich chocolate.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>COCONUT CHIA PUDDING</h3>
+                        <p>Creamy coconut pudding infused with chia seeds and served with a medley of tropical fruits.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>PEANUT BUTTER BANANA PIE</h3>
+                        <p>A luscious pie made with layers of creamy peanut butter, sliced bananas, and a chocolate
+                            cookie crust.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>COCONUT LIME SORBET</h3>
+                        <p>Refreshing coconut lime sorbet with a hint of mint, perfect for cooling off on a hot day.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+            </ul>
+        </article>
+        <article class="list">
+            <h2 id="SNACK">SNACK SELECTION</h2>
+            <ul>
+                <li>
+                    <span>
+                        <h3>ROASTED CHICKPEAS</h3>
+                        <p>Crunchy chickpeas roasted with savory spices, perfect for snacking on the go.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>4.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>VEGGIE SUSHI ROLLS</h3>
+                        <p>Colorful sushi rolls filled with avocado, cucumber, carrot, and bell pepper, served with soy
+                            sauce and
+                            wasabi.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>9.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>SPICY EDAMAME</h3>
+                        <p>Steamed edamame tossed in a spicy chili garlic sauce, a flavorful and protein-packed snack.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>GUACAMOLE & CHIPS</h3>
+                        <p>Freshly made guacamole served with crispy tortilla chips, a classic favorite for dipping.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>STUFFED GRAPE LEAVES</h3>
+                        <p>Grape leaves stuffed with seasoned rice, pine nuts, and herbs, served with a tangy lemon
+                            tahini sauce.
+                        </p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>PIZZA SLICES</h3>
+                        <p>Delicious pizza slices topped with marinara sauce, cheese, and assorted veggies.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>5.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CUCUMBER ROLL-UPS</h3>
+                        <p>Thinly sliced cucumber rolled up with hummus, bell pepper strips, and sprouts, a refreshing
+                            and crunchy
+                            snack.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>CHEESE PLATE</h3>
+                        <p>A selection of cheeses served with crackers, grapes, and fig jam, perfect for sharing.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>12.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>SPINACH ARTICHOKE DIP</h3>
+                        <p>Creamy spinach and artichoke dip served warm with toasted bread or pita chips.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>FRUIT KABOBS</h3>
+                        <p>Assorted fresh fruits skewered and served with a drizzle of agave nectar for a sweet and
+                            refreshing
+                            treat.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>QUINOA STUFFED MUSHROOMS</h3>
+                        <p>Baked mushrooms filled with quinoa, sun-dried tomatoes, and fresh herbs, a satisfying and
+                            nutritious
+                            snack.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>10.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>AVOCADO TOAST BITES</h3>
+                        <p>Mini avocado toast bites topped with cherry tomatoes, red onion, and balsamic glaze, a trendy
+                            and
+                            delicious snack option.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+            </ul>
+        </article>
+        <article class="list">
+            <h2 id="SAVORY">Savory Snack Selection</h2>
+            <ul>
+                <li>
+                    <span>
+                        <h3>Roasted Chickpeas</h3>
+                        <p>Crunchy chickpeas roasted with savory spices, perfect for snacking on the go.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>4.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Mini Pretzel Bites</h3>
+                        <p>Bite-sized pretzels baked to golden perfection, served with a side of spicy mustard for
+                            dipping.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>3.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Stuffed Jalapeños</h3>
+                        <p>cream cheese and wrapped in crispy bacon made from tempeh.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>6.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Buffalo Cauliflower Bites</h3>
+                        <p>Crispy cauliflower fsts tossed in tangy buffalo sauce, served with ranch dressing.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>7.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Spinach Artichoke Dip</h3>
+                        <p>Creamy spinach and artichoke dip served warm with toasted bread or pita chips.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>8.49</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Garlic Hummus & Veggie Sticks</h3>
+                        <p>Smooth garlic hummus served with an assortment of fresh vegetable sticks for dipping.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>5.99</h1>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <h3>Spicy Tofu Skewers</h3>
+                        <p>Marinated tofu cubes skewered and grilled to perfection, served with a side of peanut dipping
+                            sauce.</p>
+                    </span>
+                    <span>
+                        <h1><span>$</span>9.49</h1>
+                    </span>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="logo">
+            <h2>FOODIE</h2>
+            <h4>MENU</h4>
+            <p style="font-size: small;">Where people connect ❤️ with meals</p>
+        </div>
+        <hr style="width: 205px;margin-block: .5rem 1.5rem;">
+        <span style="z-index:99;">
+            <a href="#"><span style="color: red; font-weight: bolder;">Tel:</span>+91 7339677034</a>
+            <a href="#"><span style="color: red; font-weight: bolder;">Mob:</span>+91 733-967-7034</a>
+            <a href="#"><span style="color: red; font-weight: bolder;">E-Mail:</span>ray38250968@gmail.com</a>
+        </span>
+        <address>11/12,RZZ Road, ambur - 635810, Vellore District, TamilNadu, India.</address>
+    </footer>
+
+
+    <!-- credit -->
+    <section class="dev">
+        <span>Developed</span> &nbsp; By&nbsp;
+        <h2><a href="mailto:raiyan.c.me@gmail.com">Raiyan Ahmed&nbsp;&nbsp;</a></h2>
+        <a href="tel:+91 7339677034"><span style="color: darkgreen; font-weight: bolder;">Tel:</span> &nbsp;+91
+            7339677034&nbsp;</a>
+        <a href="#"><span style="color: darkgreen; font-weight: bolder;">E-Mail:</span>
+            &nbsp;raiyan.c.me@gmail.com&nbsp;</a>
+    </section>
+
+
+    <!-- for qr code -->
+    <script src="./js/qrcode.min.js"></script>
+    <script type="text/javascript">
+        let qrcode = new QRCode("qrcode", {
+            text: window.location.href,
+            width: 160,
+            height: 160,
+            colorDark: "#ffffff",
+            colorLight: "#000000",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+
+
+    <!-- for grid -->
+    <script src="./js/masonry.js"></script>
+    <script>
+        var grid = document.querySelector('main');
+        var masonry = new Masonry(grid, {
+            itemSelector: '.list',
+            columnWidth: 10, gutter: 10, fitWidth: true
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

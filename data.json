@@ -1,0 +1,194 @@
+{
+  "menu": {
+    "0": {
+      "catagorey": "shakes and smoothies",
+      "item": [
+        {
+          "name": "Berry Bliss",
+          "description": "A refreshing blend of mixed berries, almond milk, and banana.",
+          "price": 7.99
+        },
+        {
+          "name": "Tropical Delight",
+          "description": "A tropical concoction featuring pineapple, mango, coconut milk, and spinach.",
+          "price": 8.99
+        },
+        {
+          "name": "Green Machine",
+          "description": "A nutrient-packed blend of kale, spinach, banana, apple, and almond milk.",
+          "price": 9.99
+        },
+        {
+          "name": "Chocolate Chia",
+          "description": "Indulge in this rich chocolatey shake with chia seeds and almond butter.",
+          "price": 8.99
+        },
+        {
+          "name": "Spinach Supreme",
+          "description": "A vibrant green smoothie packed with spinach, banana, mango, and coconut water.",
+          "price": 7.99
+        }
+      ]
+    },
+    "1": {
+      "catagorey": "ice cream delights",
+      "item": [
+        {
+          "name": "Cookie Dough Bliss",
+          "description": "A classic favorite featuring chunks of cookie dough mixed into creamy vanilla ice cream.",
+          "price": 6.99
+        },
+        {
+          "name": "Chocolate Fudge Indulgence",
+          "description": "Rich chocolate ice cream swirled with gooey fudge sauce, made entirely from plant-based ingredients.",
+          "price": 7.49
+        },
+        {
+          "name": "Strawberry Sundae Surprise",
+          "description": "Fresh strawberry ice cream topped with a decadent berry compote and whipped cream.",
+          "price": 7.99
+        }
+      ]
+    },
+    "2": {
+      "catagorey": "dessert delights",
+      "item": [
+        {
+          "name": "Lemon Blueberry Cheesecake",
+          "description": "Tangy lemon-infused cheesecake topped with fresh blueberries, all on a crunchy almond crust.",
+          "price": 8.99
+        },
+        {
+          "name": "Chocolate Avocado Mousse",
+          "description": "Decadent chocolate mousse made with creamy avocado, sweetened with maple syrup, and topped with cocoa nibs.",
+          "price": 7.49
+        },
+        {
+          "name": "Raspberry Almond Tart",
+          "description": "Delicate almond pastry filled with raspberry compote and topped with toasted almond slices.",
+          "price": 6.99
+        },
+        {
+          "name": "Caramel Pecan Brownies",
+          "description": "Gooey caramel brownies studded with crunchy pecans, made with rich chocolate.",
+          "price": 7.99
+        },
+        {
+          "name": "Coconut Chia Pudding",
+          "description": "Creamy coconut pudding infused with chia seeds and served with a medley of tropical fruits.",
+          "price": 6.49
+        },
+        {
+          "name": "Peanut Butter Banana Pie",
+          "description": "A luscious pie made with layers of creamy peanut butter, sliced bananas, and a chocolate cookie crust.",
+          "price": 8.49
+        },
+        {
+          "name": "Coconut Lime Sorbet",
+          "description": "Refreshing coconut lime sorbet with a hint of mint, perfect for cooling off on a hot day.",
+          "price": 6.99
+        }
+      ]
+    },
+    "3": {
+      "catagorey": "snack selection",
+      "item": [
+        {
+          "name": "Roasted Chickpeas",
+          "description": "Crunchy chickpeas roasted with savory spices, perfect for snacking on the go.",
+          "price": 4.99
+        },
+        {
+          "name": "Veggie Sushi Rolls",
+          "description": "Colorful sushi rolls filled with avocado, cucumber, carrot, and bell pepper, served with soy sauce and wasabi.",
+          "price": 9.49
+        },
+        {
+          "name": "Spicy Edamame",
+          "description": "Steamed edamame tossed in a spicy chili garlic sauce, a flavorful and protein-packed snack.",
+          "price": 6.99
+        },
+        {
+          "name": "Guacamole & Chips",
+          "description": "Freshly made guacamole served with crispy tortilla chips, a classic favorite for dipping.",
+          "price": 7.99
+        },
+        {
+          "name": "Stuffed Grape Leaves",
+          "description": "Grape leaves stuffed with seasoned rice, pine nuts, and herbs, served with a tangy lemon tahini sauce.",
+          "price": 8.99
+        },
+        {
+          "name": "Pizza Slices",
+          "description": "Delicious pizza slices topped with marinara sauce, cheese, and assorted veggies.",
+          "price": 5.49
+        },
+        {
+          "name": "Cucumber Roll-Ups",
+          "description": "Thinly sliced cucumber rolled up with hummus, bell pepper strips, and sprouts, a refreshing and crunchy snack.",
+          "price": 6.49
+        },
+        {
+          "name": "Cheese Plate",
+          "description": "A selection of cheeses served with crackers, grapes, and fig jam, perfect for sharing.",
+          "price": 12.99
+        },
+        {
+          "name": "Spinach Artichoke Dip",
+          "description": "Creamy spinach and artichoke dip served warm with toasted bread or pita chips.",
+          "price": 8.49
+        },
+        {
+          "name": "Fruit Kabobs",
+          "description": "Assorted fresh fruits skewered and served with a drizzle of agave nectar for a sweet and refreshing treat.",
+          "price": 7.99
+        },
+        {
+          "name": "Quinoa Stuffed Mushrooms",
+          "description": "Baked mushrooms filled with quinoa, sun-dried tomatoes, and fresh herbs, a satisfying and nutritious snack.",
+          "price": 10.49
+        },
+        {
+          "name": "Avocado Toast Bites",
+          "description": "Mini avocado toast bites topped with cherry tomatoes, red onion, and balsamic glaze, a trendy and delicious snack option.",
+          "price": 6.99
+        }
+      ]
+    },
+    "4": {
+      "catagorey": "savory snack selection",
+      "item": [
+        {
+          "name": "Mini Pretzel Bites",
+          "description": "Bite-sized pretzels baked to golden perfection, served with a side of spicy mustard for dipping.",
+          "price": 3.49
+        },
+        {
+          "name": "Stuffed Jalapeños",
+          "description": "Cream cheese and wrapped in crispy bacon made from tempeh.",
+          "price": 6.99
+        },
+        {
+          "name": "Buffalo Cauliflower Bites",
+          "description": "Crispy cauliflower fsts tossed in tangy buffalo sauce, served with ranch dressing.",
+          "price": 7.99
+        },
+        {
+          "name": "Spinach Artichoke Dip",
+          "description": "Creamy spinach and artichoke dip served warm with toasted bread or pita chips.",
+          "price": 8.49
+        },
+        {
+          "name": "Garlic Hummus & Veggie Sticks",
+          "description": "Smooth garlic hummus served with an assortment of fresh vegetable sticks for dipping.",
+          "price": 5.99
+        },
+        {
+          "name": "Spicy Tofu Skewers",
+          "description": "Marinated tofu cubes skewered and grilled to perfection, served with a side of peanut dipping sauce.",
+          "price": 9.49
+        }
+      ]
+    }
+  }
+}

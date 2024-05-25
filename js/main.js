@@ -20,8 +20,8 @@ window.addEventListener("scroll", function () {
 
   // Check if the scroll position is beyond the threshold
   if (window.scrollY > threshold) {
-    stickyElement.classList.add("move");
+    stickyElement.classList.add("move", "fit");
   } else {
-    stickyElement.classList.remove("move");
+    stickyElement.classList.remove("move", "fit");
   }
 });
