@@ -1,6 +1,6 @@
 async function fetchContentData() {
   try {
-    const response = await fetch("/data.json"); // Ensure the correct path to your JSON file
+    const response = await fetch("../data.json");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
