@@ -10,10 +10,11 @@ async function fetchContentData(dataPath) {
   } catch (error) {
     console.error("Fetch error:", error);
     if (errCount == 0) {
-      fetchContentData("/foodie-site/data.json");
+      fetchContentData("../data.json");
       errCount++;
     }
   }
+  await masonry_init();
 }
 let errCount = 0;
 function appendMenuData(data) {
@@ -72,6 +73,5 @@ function appendMenuData(data) {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-  await fetchContentData("../data.json");
-  await masonry_init();
+  await fetchContentData("/foodie-site/data.json");
 });
