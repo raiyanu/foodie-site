@@ -75,3 +75,4 @@ function appendMenuData(data) {
 document.addEventListener("DOMContentLoaded", async function () {
   await fetchContentData("/foodie-site/data.json");
 });
+

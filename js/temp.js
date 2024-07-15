@@ -56,3 +56,12 @@ ScrollTrigger.create({
   }
   updateValues();
 </script>
+
+
+
+
+
+
+setTimeout(() => {
+  console.log("hello");
+}, 500);
