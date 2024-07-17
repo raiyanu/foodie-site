@@ -1,72 +1,78 @@
-import { defineType, defineField, defineArrayMember } from 'sanity'
+import {defineType, defineField, defineArrayMember} from 'sanity'
 
 export const product = defineType({
-  type: "document",
-  name: "product",
+  type: 'document',
+  name: 'product',
   fields: [
     defineField({
-      type: "string",
-      name: "title",
+      type: 'string',
+      name: 'title',
     }),
     defineField({
-      type: "slug",
-      name: "slug",
+      type: 'number',
+      name: 'price',
       options: {
-        source: "title",
+        required: true,
+      },
+    }),
+    defineField({
+      type: 'slug',
+      name: 'slug',
+      options: {
+        source: 'title',
         maxLength: 96,
       },
     }),
     defineField({
-      type: "text",
-      name: "description",
+      type: 'text',
+      name: 'description',
     }),
     defineField({
-      type: "image",
-      name: "mainImage",
-      options: { hotspot: true },
+      type: 'image',
+      name: 'mainImage',
+      options: {hotspot: true},
     }),
     defineField({
-      type: "array",
-      name: "variants",
+      type: 'array',
+      name: 'variants',
       of: [
         defineArrayMember({
-          type: "variant",
+          type: 'variant',
         }),
       ],
     }),
     defineField({
-      type: "array",
-      name: "tags",
+      type: 'array',
+      name: 'tags',
       of: [
         defineArrayMember({
-          type: "string",
+          type: 'string',
         }),
       ],
     }),
     defineField({
-      type: "reference",
-      name: "productCategory",
-      to: [{ type: "productCategory" }],
+      type: 'reference',
+      name: 'productCategory',
+      to: [{type: 'productCategory'}],
     }),
     defineField({
-      type: "array",
-      name: "content",
+      type: 'array',
+      name: 'content',
       of: [
         defineArrayMember({
-          type: "block",
+          type: 'block',
         }),
         defineArrayMember({
-          type: "image",
+          type: 'image',
           fields: [
             {
-              type: "string",
-              name: "caption",
+              type: 'string',
+              name: 'caption',
             },
           ],
-          options: { hotspot: true },
+          options: {hotspot: true},
         }),
       ],
     }),
   ],
-});
-
+})
