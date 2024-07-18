@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FOODIE | Home</title>
+    <title id="title">FOODIE | Home</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
@@ -14,8 +14,8 @@
     <!-- menu and header -->
     <header>
       <div class="logo">
-        <h2>FOODIE</h2>
-        <h4>MENU</h4>
+        <h2 id="FsiteName">FOODIE</h2>
+        <h4 id="SsiteName">MENU</h4>
       </div>
       <nav>
         <a href="#" class="active_tab">home</a>
@@ -60,19 +60,22 @@
       <hr style="width: 205px; margin-block: 0.5rem 1.5rem" />
       <span style="z-index: 99">
         <a href="#"
-          ><span style="color: red; font-weight: bolder">Tel:</span>+91
-          7339677034</a
+          ><span style="color: red; font-weight: bolder">Tel:</span><span id="tel">+91
+            7339677034</span></a
         >
         <a href="#"
-          ><span style="color: red; font-weight: bolder">Mob:</span>+91
-          733-967-7034</a
+          ><span style="color: red; font-weight: bolder">Mob:</span>
+          <span id="mob"></span>
+          </a
         >
         <a href="#"
-          ><span style="color: red; font-weight: bolder">E-Mail:</span
-          >ray38250968@gmail.com</a
+          ><span style="color: red; font-weight: bolder">E-Mail:</span 
+          >
+          <span id="email">ray38250968@gmail.com</span>
+          </a
         >
       </span>
-      <address>
+      <address id="address">
         11/12,RZZ Road, ambur - 635810, Vellore District, TamilNadu, India.
       </address>
     </footer>
@@ -81,19 +84,20 @@
     <section class="dev">
       <span>Developed</span> &nbsp; By&nbsp;
       <h2>
-        <a href="mailto:raiyan.c.me@gmail.com">Raiyan Ahmed&nbsp;&nbsp;</a>
+        <a href="https://raiyanu.github.io/lp">Raiyan Ahmed&nbsp;&nbsp;</a>
       </h2>
       <a href="tel:+91 7339677034"
         ><span style="color: darkgreen; font-weight: bolder">Tel:</span>
         &nbsp;+91 7339677034&nbsp;</a
       >
-      <a href="#"
+      <a href="mailto:raiyan.c.me@gmail.com"
         ><span style="color: darkgreen; font-weight: bolder">E-Mail:</span>
         &nbsp;raiyan.c.me@gmail.com&nbsp;</a
       >
     </section>
 
     <!-- for qr code -->
+    <script src="./js/cms.js"></script>
     <script type="module" src="./js/content-loader.js"></script>
     <script src="./js/qrcode.min.js"></script>
     <script src="./js/qrcode.min-init.js"></script>
