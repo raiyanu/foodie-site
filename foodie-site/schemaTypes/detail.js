@@ -28,5 +28,17 @@ export const detail = defineType({
       type: 'string',
       name: 'Mobile',
     }),
+    defineField({
+      type: 'text',
+      name: 'AboutPageContent',
+    }),
+    defineField({
+      type: 'text',
+      name: 'FAQPageContent',
+    }),
+    defineField({
+      type: 'text',
+      name: 'HelpPageContent',
+    }),
   ],
 })

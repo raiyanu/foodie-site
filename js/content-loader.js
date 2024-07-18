@@ -1,3 +1,5 @@
+// import fetchProduct from "./fetchProduct.js";
+
 async function fetchContentData(dataPath) {
   try {
     const response = await fetch(dataPath);
@@ -5,7 +7,7 @@ async function fetchContentData(dataPath) {
       throw new Error("Network response was not ok");
     }
     const menuData = await response.json();
-    console.log(menuData);
+    // console.log(menuData);
     appendMenuData(menuData);
   } catch (error) {
     console.error("Fetch error:", error);
@@ -76,3 +78,4 @@ document.addEventListener("DOMContentLoaded", async function () {
   await fetchContentData("/foodie-site/data.json");
 });
 
+// console.group(await fetchProduct());

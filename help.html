@@ -18,37 +18,15 @@
         <h4 id="SsiteName">MENU</h4>
       </div>
       <nav>
-        <a href="#" class="active_tab">home</a>
-        <a href="./help.html">Help</a>
-        <a href="#">About</a>
-        <a href="#">FAQs</a>
+        <a href="/">home</a>
+        <a href="/help.html" class="active_tab">Help</a>
+        <a href="/about.html">About</a>
+        <a href="/faq.html">FAQs</a>
       </nav>
     </header>
 
-    <!-- navigation -->
-    <nav class="section-nav" id="section_nav"></nav>
-
     <!-- menu -->
-    <main>
-      <article class="list">
-        <h2 style="text-align: center; width: 100%">Scan to share Menu</h2>
-
-        <div
-          id="qrcode"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            border: 1px solid white;
-            width: fit-content;
-            margin: auto;
-            flex-direction: column;
-            margin-top: 0.7rem;
-          "
-        ></div>
-      </article>
-    </main>
+    <main id="helpPage"></main>
 
     <!-- footer -->
     <footer>
@@ -95,13 +73,6 @@
 
     <!-- for qr code -->
     <script src="./js/cms.js" type="module"></script>
-    <script type="module" src="./js/content-loader.js" type="module"></script>
-    <script src="./js/qrcode.min.js"></script>
-    <script src="./js/qrcode.min-init.js"></script>
-    <!-- for grid -->
-    <script src="./js/masonry.js"></script>
-    <script src="./js/masonry-init.js"></script>
     <!-- for navigation panel scroll behaviour -->
-    <script src="./js/main.js"></script>
   </body>
 </html>

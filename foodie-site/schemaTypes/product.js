@@ -7,6 +7,9 @@ export const product = defineType({
     defineField({
       type: 'string',
       name: 'title',
+      options: {
+        isRequired: true,
+      },
     }),
     defineField({
       type: 'number',
@@ -21,58 +24,61 @@ export const product = defineType({
       options: {
         source: 'title',
         maxLength: 96,
+        options: {
+          isRequired: true,
+        },
       },
     }),
     defineField({
       type: 'text',
       name: 'description',
     }),
-    defineField({
-      type: 'image',
-      name: 'mainImage',
-      options: {hotspot: true},
-    }),
-    defineField({
-      type: 'array',
-      name: 'variants',
-      of: [
-        defineArrayMember({
-          type: 'variant',
-        }),
-      ],
-    }),
-    defineField({
-      type: 'array',
-      name: 'tags',
-      of: [
-        defineArrayMember({
-          type: 'string',
-        }),
-      ],
-    }),
+    // defineField({
+    //   type: 'image',
+    //   name: 'mainImage',
+    //   options: {hotspot: true},
+    // }),
+    // defineField({
+    //   type: 'array',
+    //   name: 'variants',
+    //   of: [
+    //     defineArrayMember({
+    //       type: 'variant',
+    //     }),
+    //   ],
+    // }),
+    // defineField({
+    //   type: 'array',
+    //   name: 'tags',
+    //   of: [
+    //     defineArrayMember({
+    //       type: 'string',
+    //     }),
+    //   ],
+    // }),
     defineField({
       type: 'reference',
       name: 'productCategory',
       to: [{type: 'productCategory'}],
     }),
-    defineField({
-      type: 'array',
-      name: 'content',
-      of: [
-        defineArrayMember({
-          type: 'block',
-        }),
-        defineArrayMember({
-          type: 'image',
-          fields: [
-            {
-              type: 'string',
-              name: 'caption',
-            },
-          ],
-          options: {hotspot: true},
-        }),
-      ],
-    }),
+    // defineField({
+    //   type: 'array',
+    //   name: 'content',
+    //   of: [
+    //     defineArrayMember({
+    //       type: 'block',
+    //     }),
+    //     defineArrayMember({
+    //       type: 'image',
+    //       fields: [
+    //         {
+    //           type: 'string',
+    //           name: 'caption',
+    //         },
+    //       ],
+    //       options: {hotspot: true},
+    //     }),
+    //   ],
+    // }),
   ],
 })

@@ -1,25 +1,23 @@
-import { defineType, defineField } from 'sanity'
+import {defineType, defineField} from 'sanity'
 
 export const productCategory = defineType({
-  type: "document",
-  name: "productCategory",
+  type: 'document',
+  name: 'productCategory',
   fields: [
     defineField({
-      type: "string",
-      name: "title",
-    }),
-    defineField({
-      type: "slug",
-      name: "slug",
+      type: 'string',
+      name: 'title',
       options: {
-        source: "title",
-        maxLength: 96,
+        isRequired: true,
       },
     }),
     defineField({
-      type: "text",
-      name: "description",
+      type: 'slug',
+      name: 'Slug',
+      options: {
+        source: 'title',
+        isRequired: true,
+      },
     }),
   ],
-});
-
+})
