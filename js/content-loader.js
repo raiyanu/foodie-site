@@ -1,27 +1,27 @@
-// import fetchProduct from "./fetchProduct.js";
+import fetchProduct from "./fetchProduct.js";
 
-async function fetchContentData(dataPath) {
-  try {
-    const response = await fetch(dataPath);
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    const menuData = await response.json();
-    // console.log(menuData);
-    appendMenuData(menuData);
-  } catch (error) {
-    console.error("Fetch error:", error);
-    if (errCount == 0) {
-      fetchContentData("../data.json");
-      errCount++;
-    }
-  }
-  await masonry_init();
-}
+// async function fetchContentData(dataPath) {
+//   try {
+//     const response = await fetch(dataPath);
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+//     const menuData = await response.json();
+//     // console.log(menuData);
+//     appendMenuData(menuData);
+//   } catch (error) {
+//     console.error("Fetch error:", error);
+//     if (errCount == 0) {
+//       fetchContentData("../data.json");
+//       errCount++;
+//     }
+//   }
+//   await masonry_init();
+// }
+
 let errCount = 0;
-function appendMenuData(data) {
+function appendMenuData(data, sortCategorey) {
   const main = document.querySelector("main");
-
   Object.values(data.menu).forEach((category) => {
     // Create and append nav item
     // console.log(category);
@@ -75,7 +75,12 @@ function appendMenuData(data) {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
-  await fetchContentData("/foodie-site/data.json");
+  // await fetchContentData("/foodie-site/data.json");
+  (async function fetchContentData(dataPath) {
+    const productSets = await fetchProduct();
+    console.log(productSets.content);
+    appendMenuData(productSets.content, productSets.sortCategorey);
+  })();
 });
 
 // console.group(await fetchProduct());
