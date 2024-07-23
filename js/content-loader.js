@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const productSets = await fetchProduct();
     console.log(productSets.content, productSets.categorey);
     appendMenuData(productSets.content, productSets.categorey);
+    await masonry_init();
   })();
 });
 
