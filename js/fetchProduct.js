@@ -44,7 +44,7 @@ const getCategorey = async (data) => {
 
   Object.keys(data.result).map((key) => {
     if (data.result[key]._type === "product") {
-      console.log(data.result[key]);
+      // console.log(data.result[key]);
       if (content.menu[data.result[key].productCategory._ref] == undefined) {
         // console.log(data.result[key].productCategory._ref);
         categorey.push(data.result[key].productCategory._ref);
