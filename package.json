@@ -1,0 +1,20 @@
+{
+	"name": "foodie-site",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"sanity-dev": "sanity dev",
+		"sanity-start": "sanity start",
+		"sanity-build": "sanity build",
+		"sanity-deploy": "sanity deploy",
+		"sanity-deploy-graphql": "sanity graphql deploy",
+		"babel": "babel src --watch -d js"
+	},
+	"repository": "https://github.com/raiyanu/foodie-site.git",
+	"license": "MIT",
+	"dependencies": {
+		"@babel/cli": "^7.25.9",
+		"@babel/core": "^7.26.0",
+		"@babel/preset-env": "^7.26.0"
+	}
+}
