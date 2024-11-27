@@ -1,20 +1,28 @@
 {
 	"name": "foodie-site",
 	"version": "1.0.0",
-	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"sanity-dev": "sanity dev",
 		"sanity-start": "sanity start",
 		"sanity-build": "sanity build",
 		"sanity-deploy": "sanity deploy",
 		"sanity-deploy-graphql": "sanity graphql deploy",
-		"babel": "babel src --watch -d js"
+		"babel": "babel src --watch -d js",
+		"build": "webpack --watch"
 	},
 	"repository": "https://github.com/raiyanu/foodie-site.git",
 	"license": "MIT",
-	"dependencies": {
+	"devDependencies": {
 		"@babel/cli": "^7.25.9",
 		"@babel/core": "^7.26.0",
-		"@babel/preset-env": "^7.26.0"
-	}
+		"@babel/preset-env": "^7.26.0",
+		"webpack": "^5.96.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"author": {
+		"name": "Raiyan Uddin",
+		"email": "raiyan.c.me@gmail.com"
+	},
+	"dependencies": {}
 }
